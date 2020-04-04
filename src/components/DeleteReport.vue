@@ -191,9 +191,7 @@ export default {
   grid-row: 1/2;
   grid-column: 1/3;
   margin: 20px;
-  background-image: url("jung.jpg");
-  background-position: top;
-  
+  background-color: black;
 }
 
 .showSnippetsBox {

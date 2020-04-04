@@ -1,22 +1,27 @@
 <template>
   <div>
     <form>
-      <div class="component">
-        <br><h1>/ADD SNIPPET/</h1><br>
+      <div>
+        <br />
+        <h1>/ADD SNIPPET/</h1>
+        <br />
 
-        <div class="form-group">
-          <label>Name</label> &nbsp; 
+        <div>
+          <label>Name</label> &nbsp;
           <input class="name" type="text" size="50" v-model="title" />
         </div>
 
-        <br><div class="form-group">
+        <br />
+        <div>
           <label>Message</label> &nbsp;
           <textarea class="message" type="text" rows="4" cols="4" v-model="content" />
         </div>
       </div>
 
-      <br><button type="submit" method="POST" @click="addToAPI">Submit</button>
-    </form><br>
+      <br />
+      <button @click="addToAPI">Submit</button>
+    </form>
+    <br />
   </div>
 </template>
 
@@ -26,7 +31,7 @@ import axios from "axios";
 export default {
   name: "AddSnippet",
   props: {
-    msg: String,
+    msg: String
   },
   data: () => ({
     title: "",
@@ -60,54 +65,51 @@ export default {
 
 
 <style scoped>
-h1{
-	color: white;
-	background-color: black;
+h1 {
+  color: black;
+  background-color: white;
 }
-input{
-	padding: 10px;
-	outline: none;
-	margin-right: 130px;
-	font-size: 1em;
-}
-
-label{
-	color: white;
-	font-size: 1.3em;
-	margin-right: 50px;
+input {
+  padding: 10px;
+  outline: none;
+  margin-right: 130px;
+  font-size: 1em;
 }
 
-.name{
-	width: 150px;
+label {
+  color: white;
+  font-size: 1.3em;
+  margin-right: 50px;
 }
 
-.message{
-	width: 350px;
-	padding: 10px;
-	outline: none;
-	margin-right: 130px;
-	font-size: 1em;
+.name {
+  width: 150px;
 }
 
-button{
-padding: 10px;
-font-size: 1em;
-color: white;
-border-radius: 2px;
-background-color: black;
-border: none;
+.message {
+  width: 350px;
+  padding: 10px;
+  outline: none;
+  margin-right: 130px;
+  font-size: 1em;
 }
 
-button:hover{
-background-color: white;
-color: black;
+button {
+  padding: 10px;
+  font-size: 1em;
+  color: white;
+  border-radius: 2px;
+  background-color: black;
+  border: 2px solid white;
+}
 
+button:hover {
+  background-color: white;
+  color: black;
 }
 
 button:focus {
   outline-width: 3px;
-  outline-color: hotpink;
+  outline-color: gray;
 }
-
-
 </style>

@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div class="loadingDiv"><br><span class="loading" v-if="load">
+    <br />
+    <span class="loading" v-if="load">
       <h1>Loading...</h1>
-    </span></div>
+    </span>
 
     <button
       @click="loadLatest, showLatest(), activeBtn = 'btn1'"
@@ -58,7 +59,8 @@
           class="fa"
           :id="snippet.id"
         >&#xf088;</button>
-		<br><a class="line">----------</a>
+        <br />
+        <a class="line">----------</a>
       </p>
     </div>
 
@@ -89,7 +91,8 @@
           class="fa"
           :id="snippet.id"
         >&#xf071;</button>
-		<br><a class="line">----------</a>
+        <br />
+        <a class="line">----------</a>
       </p>
     </div>
 
@@ -118,7 +121,8 @@
           :id="snippet.id"
         >&#xf0e2;</button>
         &nbsp;
-		<br><a class="line">----------</a>
+        <br />
+        <a class="line">----------</a>
       </p>
     </div>
   </div>
@@ -284,7 +288,7 @@ button:focus {
 }
 
 .loading {
-  color: purple;
+  color: black;
 }
 
 .fa {
@@ -295,13 +299,13 @@ button:focus {
 }
 
 .fa:hover {
-  border: 1px solid purple;
-  color: purple;
+  border: 1px solid black;
+  color: black;
   background-color: white;
 }
 
 .line {
-	font-size: 2em;
-	color: purple;
+  font-size: 3em;
+  color: black;
 }
 </style>
