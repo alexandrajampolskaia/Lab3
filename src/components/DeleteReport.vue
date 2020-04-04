@@ -200,4 +200,5 @@ export default {
   border: 5px solid black;
   margin: 0 20px 0 20px;
 }
+
 </style>

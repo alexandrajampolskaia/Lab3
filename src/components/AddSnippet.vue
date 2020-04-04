@@ -112,4 +112,19 @@ button:focus {
   outline-width: 3px;
   outline-color: gray;
 }
+
+@media (max-width: 800px) {
+input {
+  margin-right: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.message {
+  width: 300px;
+  margin-right: 0;
+}
+}
 </style>
